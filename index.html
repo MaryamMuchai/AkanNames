@@ -1,31 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BIRTHDAY CALCULATOR</title>
-    <h1>Fill in here</h1>
-    <div id="output">
-        <p id="output">Your name is:</p>
-    </div>
-    <script src="scripts.js"></script>
-    <!--DATA FORM-->
-    <form>
-        <label for=" ">Name</label>
-        <input type = "text">
-        <input id="date" type="date">
-    <p><label for="gender">Choose your gender</label></p>
-       <select name=" "id="gender">
-        <option value ="Male"> Male</option>
-        <option value ="Female">Female</option>
-    </select>
-       <p><input type = "submit" value="submit"></p>
-       <p><center><label for=" ">Here is your Akra name</label></center></p>
-       <p><center><input type= "text"></center></p>
-    </form>
+    <div style="background-image:url('gender.png');">
+        <title>BIRTHDAY CALCULATOR</title>
 </head>
 <body>
-    
+    <p>Most people do know when their birthdays are, but some might not know what day of the week they were born.
+        Luckily for us, there are ways to calculate the day of the week from a specific date. The following is one of
+        the many methods that exist for that;</p>
+    <h1>Fill in here</h1>
+    <div id="main_container">
+        <div id="output">
+            <p id="output">Your name is:</p>
+        </div>
+        <script src="scripts.js"></script>
+        <!--DATA FORM-->
+        <form onsubmit="getInput(event)">
+            <label for="name">Name</label>
+            <input type="text" id="name">
+            <input id="date" type="date">
+            <p><label for="gender">Choose your gender</label></p>
+            <select name=" " id="gender">
+                <option value="male"> Male</option>
+                <option value="female">Female</option>
+            </select>
+            <p><input type="submit" value="submit"></p>
+        </form>
+        <p><center>Here is your Akra name</center></p>
+        <p>
+            <center><h2 id="solution"> </h2></center>
+     </p>
+       
+    </div>
 </body>
+
 </html>
