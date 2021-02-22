@@ -11,6 +11,9 @@ function getInput(event){
       let malename = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame']
       let femalename= ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama']
 console.log(name , day, gender);
+if (date===''){
+   alert('Kindly fill in all the spaces ')
+}
       if (gender === 'male' && day === 'Sun') {
          akraname = malename[0]
       } if (gender === 'male' && day === 'Mon') {
